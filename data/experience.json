@@ -1,0 +1,41 @@
+[
+    {
+        "id": "hi-think",
+        "title": "AI Solutions Intern",
+        "company": "Hi-Think Corporation",
+        "location": "Liaoning, China",
+        "duration": "Jun 2025 - Aug 2025",
+        "highlights": [
+            "Fine-tuned Moonshot-Kimi-v2 LLM on 240,000+ feedback entries, achieving 97.3% sentiment classification accuracy",
+            "Engineered end-to-end NLP pipelines for multi-dimensional analysis across 20+ variables",
+            "Deployed production ML system with FastAPI and Docker, reducing manual analysis time by 85%"
+        ],
+        "tech_tags": [
+            "Python",
+            "LLM Fine-tuning",
+            "FastAPI",
+            "Docker",
+            "NLP",
+            "LangChain"
+        ]
+    },
+    {
+        "id": "scu-data",
+        "title": "Data Engineer Intern",
+        "company": "Santa Clara University",
+        "location": "Santa Clara, CA",
+        "duration": "Jan 2025 - May 2025",
+        "highlights": [
+            "Engineered feature extraction pipelines for multivariate time-series data from GPS sensors",
+            "Built predictive readiness model achieving RMSE of 0.85, contributing to 20% injury reduction",
+            "Developed interactive dashboards with PostgreSQL backend for real-time athlete monitoring"
+        ],
+        "tech_tags": [
+            "Python",
+            "Scikit-Learn",
+            "PostgreSQL",
+            "Matplotlib",
+            "Seaborn"
+        ]
+    }
+]

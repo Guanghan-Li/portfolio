@@ -1,0 +1,47 @@
+[
+    {
+        "category": "Languages",
+        "skills": [
+            "Python",
+            "JavaScript",
+            "Java",
+            "C++",
+            "SQL",
+            "PHP",
+            "TypeScript"
+        ]
+    },
+    {
+        "category": "ML/AI",
+        "skills": [
+            "TensorFlow",
+            "PyTorch",
+            "Scikit-learn",
+            "LLM Fine-tuning",
+            "NLP",
+            "XGBoost"
+        ]
+    },
+    {
+        "category": "Web Development",
+        "skills": [
+            "React",
+            "Node.js",
+            "FastAPI",
+            "GraphQL",
+            "REST APIs",
+            "HTML/CSS"
+        ]
+    },
+    {
+        "category": "Data & DevOps",
+        "skills": [
+            "PostgreSQL",
+            "MySQL",
+            "Docker",
+            "AWS",
+            "Git",
+            "ETL Pipelines"
+        ]
+    }
+]

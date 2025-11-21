@@ -1,0 +1,70 @@
+[
+  {
+    "id": "real-estate-analytics",
+    "title": "Full-Stack Real Estate Analytics Platform",
+    "category": ["Full-Stack", "Machine Learning"],
+    "duration": "Mar 2025 - Jun 2025",
+    "short_description": "End-to-end ML pipeline for real estate market analysis with web scraping, predictive modeling, and interactive visualizations",
+    "tech_stack": ["Python", "React", "FastAPI", "PostgreSQL", "Scikit-learn", "XGBoost", "Docker"],
+    "highlights": [
+      "Web scraping of 1000+ property listings using Selenium and BeautifulSoup",
+      "ML ensemble models with R² improvement from 0.56 to 0.89",
+      "Interactive React frontend with Chart.js and D3.js visualizations",
+      "RESTful API backend with FastAPI and PostgreSQL database"
+    ],
+    "github_link": "#",
+    "live_demo": "#",
+    "image": "assets/images/placeholder-real-estate.jpg"
+  },
+  {
+    "id": "nft-marketplace",
+    "title": "NFT Marketplace Platform",
+    "category": ["Blockchain", "Full-Stack"],
+    "duration": "Ongoing",
+    "short_description": "Decentralized NFT marketplace with smart contracts, database architecture, and Web3 integration",
+    "tech_stack": ["PHP", "MySQL", "Solidity", "Web3.js", "JavaScript", "HTML/CSS"],
+    "highlights": [
+      "Smart contracts in Solidity for NFT minting, trading, and royalty distribution",
+      "Normalized MySQL database schema for NFT metadata and transaction history",
+      "RESTful APIs with PHP for blockchain data synchronization",
+      "ETL pipelines for on-chain and off-chain data consistency"
+    ],
+    "github_link": "#",
+    "live_demo": "#",
+    "image": "assets/images/placeholder-nft.jpg"
+  },
+  {
+    "id": "sentiment-analysis",
+    "title": "Sentiment Analysis System",
+    "category": ["Machine Learning", "Data Science"],
+    "duration": "Jun 2025 - Aug 2025",
+    "short_description": "Production ML system for analyzing 240K+ feedback entries with 97.3% accuracy",
+    "tech_stack": ["Python", "LLM Fine-tuning", "FastAPI", "Docker", "Plotly", "n8n"],
+    "highlights": [
+      "Fine-tuned LLM using SFT and PEFT techniques",
+      "NLP pipelines for multi-dimensional sentiment analysis",
+      "Production deployment with model versioning and A/B testing",
+      "85% reduction in manual analysis time through automation"
+    ],
+    "github_link": "#",
+    "live_demo": null,
+    "image": "assets/images/placeholder-sentiment.jpg"
+  },
+  {
+    "id": "sports-analytics",
+    "title": "Sports Analytics Dashboard",
+    "category": ["Data Science", "Full-Stack"],
+    "duration": "Jan 2025 - May 2025",
+    "short_description": "Predictive modeling and visualization platform for athlete performance monitoring",
+    "tech_stack": ["Python", "Scikit-Learn", "PostgreSQL", "Matplotlib", "Flask"],
+    "highlights": [
+      "Feature extraction from multivariate time-series GPS sensor data",
+      "Ensemble predictive models achieving RMSE of 0.85",
+      "Interactive dashboards for real-time athlete monitoring",
+      "20% injury reduction through data-driven insights"
+    ],
+    "github_link": "#",
+    "live_demo": null,
+    "image": "assets/images/placeholder-sports.jpg"
+  }
+]
