@@ -7,41 +7,76 @@
             "Java",
             "C++",
             "SQL",
+            "R",
+            "HTML/CSS",
             "PHP",
             "TypeScript"
         ]
     },
     {
-        "category": "ML/AI",
-        "skills": [
-            "TensorFlow",
-            "PyTorch",
-            "Scikit-learn",
-            "LLM Fine-tuning",
-            "NLP",
-            "XGBoost"
-        ]
-    },
-    {
-        "category": "Web Development",
+        "category": "Web & Backend",
         "skills": [
             "React",
             "Node.js",
             "FastAPI",
             "GraphQL",
-            "REST APIs",
-            "HTML/CSS"
+            "RESTful APIs",
+            "WebSockets"
         ]
     },
     {
-        "category": "Data & DevOps",
+        "category": "Machine Learning",
+        "skills": [
+            "TensorFlow",
+            "PyTorch",
+            "Scikit-learn",
+            "XGBoost",
+            "LightGBM",
+            "Keras",
+            "Model Deployment"
+        ]
+    },
+    {
+        "category": "NLP & LLMs",
+        "skills": [
+            "Transformers",
+            "Hugging Face",
+            "LangChain",
+            "LLM Fine-tuning (LoRA, PEFT)",
+            "Prompt Engineering"
+        ]
+    },
+    {
+        "category": "Data Science",
+        "skills": [
+            "Pandas",
+            "NumPy",
+            "SciPy",
+            "Matplotlib",
+            "Seaborn",
+            "Plotly",
+            "Feature Engineering",
+            "SHAP",
+            "A/B Testing"
+        ]
+    },
+    {
+        "category": "Databases",
         "skills": [
             "PostgreSQL",
             "MySQL",
+            "MongoDB",
+            "SQLite",
+            "SQLAlchemy"
+        ]
+    },
+    {
+        "category": "Cloud & DevOps",
+        "skills": [
+            "AWS (EC2, S3, Lambda, SageMaker, RDS)",
             "Docker",
-            "AWS",
             "Git",
-            "ETL Pipelines"
+            "GitHub"
         ]
     }
 ]

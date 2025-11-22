@@ -6,9 +6,9 @@
         "location": "Liaoning, China",
         "duration": "Jun 2025 - Aug 2025",
         "highlights": [
-            "Fine-tuned Moonshot-Kimi-v2 LLM on 240,000+ feedback entries, achieving 97.3% sentiment classification accuracy",
-            "Engineered end-to-end NLP pipelines for multi-dimensional analysis across 20+ variables",
-            "Deployed production ML system with FastAPI and Docker, reducing manual analysis time by 85%"
+            "Fine-tuned Moonshot-Kimi-v2 LLM on 240,000+ feedback entries using supervised fine-tuning (SFT) and parameter-efficient fine-tuning (PEFT), achieving 97.3% sentiment classification accuracy through optimized prompt engineering and few-shot learning strategies",
+            "Engineered end-to-end NLP pipelines using Pandas, LangChain, and DashScope for feature extraction, sentiment analysis, and multi-dimensional segmentation across 20+ organizational variables, building AI-driven correlation models to identify 5+ key satisfaction drivers",
+            "Deployed production ML system with FastAPI, implementing model versioning, A/B testing, and monitoring pipelines with Docker containerization, reducing manual analysis time by 85% through automated workflow integration using n8n"
         ],
         "tech_tags": [
             "Python",
@@ -16,7 +16,8 @@
             "FastAPI",
             "Docker",
             "NLP",
-            "LangChain"
+            "LangChain",
+            "n8n"
         ]
     },
     {
@@ -26,16 +27,17 @@
         "location": "Santa Clara, CA",
         "duration": "Jan 2025 - May 2025",
         "highlights": [
-            "Engineered feature extraction pipelines for multivariate time-series data from GPS sensors",
-            "Built predictive readiness model achieving RMSE of 0.85, contributing to 20% injury reduction",
-            "Developed interactive dashboards with PostgreSQL backend for real-time athlete monitoring"
+            "Engineered feature extraction pipelines to process multivariate time-series data from Catapult GPS sensors, extracting kinematic features (acceleration, velocity) and physiological metrics (heart rate, player load) for 25+ athletes with data validation and cleansing workflows",
+            "Designed predictive readiness model using ensemble methods (Decision Trees, Random Forest, Gradient Boosting) in Scikit-Learn, achieving RMSE of 0.85 through comprehensive feature engineering, EDA, and statistical hypothesis testing, contributing to 20% injury reduction",
+            "Built interactive data visualization dashboards using Matplotlib and Seaborn for real-time athlete monitoring and workload management, implementing PostgreSQL backend for efficient time-series data storage and query optimization"
         ],
         "tech_tags": [
             "Python",
             "Scikit-Learn",
             "PostgreSQL",
             "Matplotlib",
-            "Seaborn"
+            "Seaborn",
+            "Data Engineering"
         ]
     }
 ]

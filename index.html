@@ -15,6 +15,13 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap"
         rel="stylesheet">
 
+    <!-- Devicons for technology icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico?v=2">
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -26,7 +33,9 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">GL.</div>
+            <div class="logo">
+                <img src="files/logo_small.png" alt="GL Logo" style="height: 60px; width: auto;">
+            </div>
 
             <!-- Theme Toggle -->
             <div class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
@@ -60,9 +69,9 @@
         <h2 class="hero-tagline fade-in-up" style="animation-delay: 0.3s">I build <span id="typing-text"></span><span
                 class="cursor">|</span></h2>
         <p class="hero-desc fade-in-up" style="animation-delay: 0.4s">
-            I'm a software engineer specializing in building (and occasionally designing) exceptional digital
-            experiences. Currently, I'm focused on building accessible, human-centered products at Santa Clara
-            University.
+            I'm a Master's student in Computer Science at Georgia Tech, specializing in Machine Learning and AI.
+            Currently focused on creating accessible, data-driven solutions that bridge the gap between cutting-edge AI
+            and practical applications.
         </p>
         <div class="fade-in-up" style="animation-delay: 0.5s">
             <a href="#projects" class="btn">Check out my work!</a>
@@ -75,31 +84,47 @@
         <div class="about-content">
             <div class="about-text">
                 <p>
-                    Hello! My name is Guanghan and I enjoy creating things that live on the internet. My interest in web
-                    development started back in 2020 when I decided to try editing custom Tumblr themes — turns out
-                    hacking together HTML & CSS taught me a lot about how the web works!
+                    Hello! My name is Guanghan and my journey started with traditional web development—HTML, CSS, the
+                    works—but quickly evolved when I realized the real magic happens when you combine software
+                    engineering with machine learning and intelligent data pipelines.
                 </p>
                 <br>
                 <p>
-                    Fast-forward to today, and I've had the privilege of working at an <a href="#"
-                        style="color: var(--color-secondary)">AI corporation</a> and a <a href="#"
-                        style="color: var(--color-secondary)">university research lab</a>. My main focus these days is
-                    building accessible, inclusive products and digital experiences for a variety of clients.
+                    I recently completed my undergraduate degree in Computer Science at Santa Clara University (GPA:
+                    3.9/4.0) and I'm now pursuing my Master's in Computer Science at Georgia Tech, where I'm diving
+                    deeper into Machine Learning, Natural Language Processing, and scalable systems architecture.
                 </p>
                 <br>
-                <p>Here are a few technologies I've been working with recently:</p>
-                <div id="skills-container">
-                    <!-- Skills will be injected here by JS -->
-                </div>
+                <p>
+                    During my undergrad, I worked as an AI Solutions Intern at Hi-Think Corporation, building production
+                    ML systems, and as a Data Engineer Intern at SCU, designing scalable data pipelines. These
+                    experiences solidified my passion for building intelligent systems that can handle real-world
+                    complexity.
+                </p>
+                <br>
+                <p>
+                    These days, I'm most excited about projects at the intersection of deep learning, NLP, and
+                    distributed systems—think recommendation engines, intelligent automation, and data infrastructure
+                    that scales. I'm actively seeking new grad roles or paid internships where I can apply cutting-edge
+                    research to practical problems.
+                </p>
             </div>
             <div class="about-img">
-                <!-- Placeholder for profile image -->
-                <div
-                    style="width: 100%; height: 300px; background-color: #112240; border-radius: 4px; position: relative;">
+                <div class="img-container" style="position: relative; width: 100%; max-width: 300px; margin: 0 auto;">
+                    <img src="files/self.jpeg" alt="Guanghan Li"
+                        style="width: 100%; border-radius: 4px; display: block; position: relative; z-index: 1; transition: var(--transition);">
                     <div
-                        style="position: absolute; top: 20px; left: 20px; width: 100%; height: 100%; border: 2px solid var(--color-secondary); border-radius: 4px; z-index: -1;">
+                        style="position: absolute; top: 20px; left: 20px; width: 100%; height: 100%; border: 2px solid var(--color-secondary); border-radius: 4px; z-index: 0;">
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Skills Section (Full Width) -->
+        <div class="skills-section">
+            <h3 class="skills-title">Technical Skills</h3>
+            <div id="skills-container">
+                <!-- Skills will be injected here by JS -->
             </div>
         </div>
     </section>

@@ -476,3 +476,160 @@ footer {
     font-size: 12px;
     color: var(--color-text);
 }
+/* Pixel Art Logo */
+.pixel-logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 5px;
+}
+
+.pixel-g, .pixel-l {
+    width: 4px;
+    height: 4px;
+    background: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+/* 
+  Pixel Art using box-shadow 
+  Grid 5x5, pixel size 4px
+*/
+
+.pixel-g {
+    /* 
+      . X X X .
+      X . . . .
+      X . X X .
+      X . . X .
+      . X X X .
+    */
+    box-shadow: 
+        4px 0 var(--color-secondary), 8px 0 var(--color-secondary), 12px 0 var(--color-secondary),
+        0 4px var(--color-secondary),
+        0 8px var(--color-secondary), 8px 8px var(--color-secondary), 12px 8px var(--color-secondary),
+        0 12px var(--color-secondary), 12px 12px var(--color-secondary),
+        4px 16px var(--color-secondary), 8px 16px var(--color-secondary), 12px 16px var(--color-secondary);
+    width: 4px;
+    height: 4px;
+    margin-right: 16px; /* Space for the width of the letter */
+    margin-bottom: 16px; /* Space for height */
+}
+
+.pixel-l {
+    /* 
+      X . . . .
+      X . . . .
+      X . . . .
+      X . . . .
+      X X X X .
+    */
+    box-shadow: 
+        0 0 var(--color-secondary),
+        0 4px var(--color-secondary),
+        0 8px var(--color-secondary),
+        0 12px var(--color-secondary),
+        0 16px var(--color-secondary), 4px 16px var(--color-secondary), 8px 16px var(--color-secondary), 12px 16px var(--color-secondary);
+    width: 4px;
+    height: 4px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+/* Skill Categories */
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category-title {
+    color: var(--color-secondary);
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.skill-category .skills-list {
+    margin-top: 0;
+}
+
+/* Skills Section - Full Width */
+.skills-section {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.skills-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--color-text-bright);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+.skill-category-card {
+    background-color: var(--color-card-bg);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 8px var(--color-shadow);
+    transition: var(--transition);
+}
+
+.skill-category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px var(--color-shadow);
+}
+
+.skill-category-card .skill-category-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: var(--color-text-bright);
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 10px;
+}
+
+.skills-list-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list-icons li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 15px;
+    color: var(--color-text);
+}
+
+.skills-list-icons li i {
+    font-size: 24px;
+    margin-right: 12px;
+    min-width: 24px;
+}
+
+.skills-list-icons li span {
+    flex: 1;
+}
+
+/* Emoji icons for skills */
+.skill-emoji-icon {
+    font-size: 24px;
+    margin-right: 12px;
+    min-width: 24px;
+    display: inline-block;
+    text-align: center;
+}
