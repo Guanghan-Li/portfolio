@@ -115,58 +115,24 @@ async function fetchData() {
 
 function renderSkills(skills) {
     const container = document.getElementById('skills-container');
-    console.log('Skills container:', container);
-    console.log('Skills data:', skills);
     if (!container) return;
 
-    // Create a grid container for all categories
+    // Create a grid container
     const gridContainer = document.createElement('div');
-    gridContainer.className = 'skills-grid';
+    gridContainer.className = 'skills-grid-text';
 
-    skills.forEach(category => {
-        // Create category card
-        const categoryCard = document.createElement('div');
-        categoryCard.className = 'skill-category-card';
+    skills.forEach(skill => {
+        // Create skill card
+        const card = document.createElement('div');
+        card.className = 'skill-text-card';
 
-        // Add category title
-        const categoryTitle = document.createElement('h4');
-        categoryTitle.className = 'skill-category-title';
-        categoryTitle.textContent = category.category;
-        categoryCard.appendChild(categoryTitle);
+        // Title (Text Only)
+        const title = document.createElement('p');
+        title.className = 'skill-text-name';
+        title.textContent = skill.name;
+        card.appendChild(title);
 
-        // Create skills list
-        const list = document.createElement('ul');
-        list.className = 'skills-list-icons';
-
-        category.skills.forEach(skill => {
-            const li = document.createElement('li');
-
-            // Check if we should use emoji instead of icon
-            const emojiIcon = getEmojiIcon(skill);
-            if (emojiIcon) {
-                // Use emoji
-                const iconSpan = document.createElement('span');
-                iconSpan.className = 'skill-emoji-icon';
-                iconSpan.textContent = emojiIcon;
-                li.appendChild(iconSpan);
-            } else {
-                // Use Devicon
-                const icon = document.createElement('i');
-                icon.className = getIconClass(skill);
-                li.appendChild(icon);
-            }
-
-            // Add skill name
-            const skillName = document.createElement('span');
-            skillName.textContent = skill;
-            li.appendChild(skillName);
-
-            list.appendChild(li);
-        });
-
-        categoryCard.appendChild(list);
-        gridContainer.appendChild(categoryCard);
-        console.log('Added skills category:', category.category);
+        gridContainer.appendChild(card);
     });
 
     container.appendChild(gridContainer);
@@ -180,15 +146,16 @@ function getEmojiIcon(skill) {
         'Model Deployment': '🚢',
         'Transformers': '🤖',
         'Hugging Face': '🤗',
-        'LangChain': '🔗',
-        'Prompt Engineering': '💭',
-        'SciPy': '📊',
-        'Seaborn': '📈',
-        'Feature Engineering': '🔧',
-        'SHAP': '📉',
-        'A/B Testing': '🧪',
-        'RESTful APIs': '🔌',
-        'WebSockets': '🔌'
+        'LangChain': '🦜', // LangChain logo is a bird/chain, parrot is close
+        'Prompt Engineering': '✍️',
+        'SciPy': '�',
+        'Seaborn': '�',
+        'Feature Engineering': '⚙️',
+        'SHAP': '�',
+        'A/B Testing': '⚖️',
+        'RESTful APIs': '🌐',
+        'WebSockets': '🔌',
+        'LLM Fine-tuning (LoRA, PEFT)': '🧠'
     };
 
     return emojiMap[skill] || null;
@@ -202,7 +169,7 @@ function getIconClass(skill) {
         'JavaScript': 'devicon-javascript-plain colored',
         'Java': 'devicon-java-plain colored',
         'C++': 'devicon-cplusplus-plain colored',
-        'SQL': 'devicon-azuresqldatabase-plain colored',
+        'SQL': 'devicon-mysql-plain colored', // Using MySQL as generic SQL icon
         'R': 'devicon-r-original colored',
         'HTML/CSS': 'devicon-html5-plain colored',
         'PHP': 'devicon-php-plain colored',
@@ -211,37 +178,20 @@ function getIconClass(skill) {
         // Web & Backend
         'React': 'devicon-react-original colored',
         'Node.js': 'devicon-nodejs-plain colored',
-        'FastAPI': 'devicon-fastapi-plain',
+        'FastAPI': 'devicon-fastapi-plain colored',
         'GraphQL': 'devicon-graphql-plain colored',
-        'RESTful APIs': 'devicon-swagger-plain colored',
-        'WebSockets': 'devicon-socketio-original',
 
         // Machine Learning
         'TensorFlow': 'devicon-tensorflow-original colored',
         'PyTorch': 'devicon-pytorch-original colored',
         'Scikit-learn': 'devicon-scikitlearn-plain colored',
-        'XGBoost': 'devicon-python-plain colored', // No XGBoost icon, use Python
-        'LightGBM': 'devicon-python-plain colored', // No LightGBM icon, use Python
         'Keras': 'devicon-keras-plain colored',
-        'Model Deployment': 'devicon-docker-plain colored', // Use Docker as deployment icon
-
-        // NLP & LLMs
-        'Transformers': 'devicon-python-plain colored',
-        'Hugging Face': 'devicon-python-plain colored',
-        'LangChain': 'devicon-python-plain colored',
-        'LLM Fine-tuning (LoRA, PEFT)': 'devicon-pytorch-original colored',
-        'Prompt Engineering': 'devicon-openai-plain',
 
         // Data Science
-        'Pandas': 'devicon-pandas-plain colored',
-        'NumPy': 'devicon-numpy-plain colored',
-        'SciPy': 'devicon-python-plain colored',
+        'Pandas': 'devicon-pandas-original colored',
+        'NumPy': 'devicon-numpy-original colored',
         'Matplotlib': 'devicon-matplotlib-plain colored',
-        'Seaborn': 'devicon-python-plain colored',
         'Plotly': 'devicon-plotly-plain colored',
-        'Feature Engineering': 'devicon-python-plain colored',
-        'SHAP': 'devicon-python-plain colored',
-        'A/B Testing': 'devicon-python-plain colored',
 
         // Databases
         'PostgreSQL': 'devicon-postgresql-plain colored',

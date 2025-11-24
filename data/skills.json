@@ -1,82 +1,26 @@
 [
     {
-        "category": "Languages",
-        "skills": [
-            "Python",
-            "JavaScript",
-            "Java",
-            "C++",
-            "SQL",
-            "R",
-            "HTML/CSS",
-            "PHP",
-            "TypeScript"
-        ]
+        "name": "Python Programming",
+        "icon": "devicon-python-plain colored"
     },
     {
-        "category": "Web & Backend",
-        "skills": [
-            "React",
-            "Node.js",
-            "FastAPI",
-            "GraphQL",
-            "RESTful APIs",
-            "WebSockets"
-        ]
+        "name": "Artificial Intelligence (AI)",
+        "icon": "emoji-🤖"
     },
     {
-        "category": "Machine Learning",
-        "skills": [
-            "TensorFlow",
-            "PyTorch",
-            "Scikit-learn",
-            "XGBoost",
-            "LightGBM",
-            "Keras",
-            "Model Deployment"
-        ]
+        "name": "Machine Learning",
+        "icon": "emoji-🧠"
     },
     {
-        "category": "NLP & LLMs",
-        "skills": [
-            "Transformers",
-            "Hugging Face",
-            "LangChain",
-            "LLM Fine-tuning (LoRA, PEFT)",
-            "Prompt Engineering"
-        ]
+        "name": "Database Management",
+        "icon": "devicon-postgresql-plain colored"
     },
     {
-        "category": "Data Science",
-        "skills": [
-            "Pandas",
-            "NumPy",
-            "SciPy",
-            "Matplotlib",
-            "Seaborn",
-            "Plotly",
-            "Feature Engineering",
-            "SHAP",
-            "A/B Testing"
-        ]
+        "name": "Data Cleaning",
+        "icon": "emoji-🧹"
     },
     {
-        "category": "Databases",
-        "skills": [
-            "PostgreSQL",
-            "MySQL",
-            "MongoDB",
-            "SQLite",
-            "SQLAlchemy"
-        ]
-    },
-    {
-        "category": "Cloud & DevOps",
-        "skills": [
-            "AWS (EC2, S3, Lambda, SageMaker, RDS)",
-            "Docker",
-            "Git",
-            "GitHub"
-        ]
+        "name": "Cloud Development",
+        "icon": "devicon-amazonwebservices-plain-wordmark colored"
     }
 ]

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Guanghan Li</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        /* Resume Specific Styles */
+        body {
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* Override Navbar for Resume Page */
+        nav {
+            background-color: #ffffff;
+            box-shadow: none;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            color: #333;
+        }
+
+        .nav-links a {
+            color: #555;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-secondary);
+        }
+
+        /* Resume Container */
+        .resume-container {
+            max-width: 800px;
+            margin: 140px auto 60px;
+            padding: 0 20px;
+        }
+
+        .resume-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .resume-name {
+            font-size: 48px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .resume-contact {
+            font-size: 16px;
+            color: #718096;
+            margin-bottom: 30px;
+        }
+
+        .download-btn-container {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #3182ce;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .download-btn:hover {
+            background-color: #2c5282;
+            color: white;
+        }
+
+        /* Sections */
+        .resume-section {
+            margin-bottom: 40px;
+        }
+
+        .resume-section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2d3748;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Items */
+        .resume-item {
+            margin-bottom: 25px;
+        }
+
+        .resume-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .resume-item-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2d3748;
+        }
+
+        .resume-item-subtitle {
+            font-size: 16px;
+            color: #4a5568;
+            font-style: italic;
+        }
+
+        .resume-item-date {
+            font-size: 14px;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        .resume-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .resume-list li {
+            margin-bottom: 5px;
+        }
+
+        .university-logo {
+            height: 40px;
+            width: auto;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Guanghan Li</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html" style="color: var(--color-secondary);">Resume</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="resume-container">
+        <div class="resume-header">
+            <h1 class="resume-name">Guanghan Li</h1>
+            <div class="resume-contact">
+                Master's Student in Computer Science @ Georgia Tech | ML & AI Specialist
+            </div>
+        </div>
+
+        <div class="download-btn-container">
+            <a href="assets/files/SWE_Resume.pdf" class="download-btn" target="_blank" download>Download PDF</a>
+        </div>
+
+        <!-- Education -->
+        <div class="resume-section">
+            <h2 class="resume-section-title">Education</h2>
+
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <div style="display: flex; align-items: center;">
+                        <span class="resume-item-title">Georgia Institute of Technology</span>
+                    </div>
+                    <span class="resume-item-date">Expected Dec 2025</span>
+                </div>
+                <div class="resume-item-subtitle">Master of Science in Computer Science</div>
+                <ul class="resume-list">
+                    <li>Specialization in Machine Learning and Artificial Intelligence</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <span class="resume-item-title">Santa Clara University</span>
+                    <span class="resume-item-date">Graduated 2023</span>
+                </div>
+                <div class="resume-item-subtitle">Bachelor of Science in Computer Science</div>
+                <ul class="resume-list">
+                    <li>GPA: 3.9 / 4.0</li>
+                    <li>Relevant Coursework: Data Structures, Algorithms, Distributed Systems, Deep Learning</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="resume-section">
+            <h2 class="resume-section-title">Experience</h2>
+
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <span class="resume-item-title">AI Solutions Intern</span>
+                    <span class="resume-item-date">Summer 2023</span>
+                </div>
+                <div class="resume-item-subtitle">Hi-Think Corporation</div>
+                <ul class="resume-list">
+                    <li>Developed and deployed machine learning models for predictive analytics, improving forecast
+                        accuracy by 15%.</li>
+                    <li>Collaborated with cross-functional teams to integrate AI solutions into existing product suites.
+                    </li>
+                    <li>Optimized data processing pipelines using Python and SQL, reducing processing time by 30%.</li>
+                </ul>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <span class="resume-item-title">Data Engineer Intern</span>
+                    <span class="resume-item-date">Summer 2022</span>
+                </div>
+                <div class="resume-item-subtitle">Santa Clara University</div>
+                <ul class="resume-list">
+                    <li>Designed and implemented scalable ETL pipelines to handle large datasets for research projects.
+                    </li>
+                    <li>Maintained and optimized database schemas to ensure data integrity and query performance.</li>
+                    <li>Automated data collection processes, saving 10+ hours of manual work per week.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="resume-section">
+            <h2 class="resume-section-title">Certifications</h2>
+            <ul class="resume-list">
+                <li><strong>Stanford University:</strong> Machine Learning Specialization</li>
+                <li><strong>IBM:</strong> Data Analytics and Machine Learning Professional Certificate</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

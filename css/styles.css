@@ -16,8 +16,9 @@
 
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-    --nav-height: 100px;
-    --nav-scroll-height: 70px;
+    --nav-height: 80px;
+    /* Reduced from 100px */
+    --nav-scroll-height: 60px;
 }
 
 /* Dark Theme */
@@ -120,15 +121,19 @@ section {
 
 .btn {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 12px 24px;
+    /* Increased padding */
     border: 1px solid var(--color-secondary);
     border-radius: 4px;
     color: var(--color-secondary);
     font-family: var(--font-heading);
-    font-size: 12px;
+    font-size: 14px;
+    /* Slightly larger font */
     background: transparent;
     cursor: pointer;
     transition: var(--transition);
+    margin-top: 12px;
+    /* Pad button up */
 }
 
 .btn:hover {
@@ -174,7 +179,8 @@ nav.scrolled {
 .nav-links {
     display: flex;
     gap: 30px;
-    margin-top: 20px;
+    margin-top: 12px;
+    /* Moved up by 8px */
 }
 
 .nav-links a {
@@ -204,7 +210,8 @@ nav.scrolled {
     position: relative;
     margin-left: auto;
     margin-right: 20px;
-    margin-top: 11px;
+    margin-top: -1px;
+    /* Adjusted for alignment */
 }
 
 .toggle-track {
@@ -287,8 +294,16 @@ nav.scrolled {
 /* About Section */
 .about-content {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr;
+    /* Single column for summary list */
     gap: 50px;
+    margin-top: 50px;
+    /* Internal spacing */
+}
+
+#about {
+    margin-top: 100px;
+    /* Clear separation from Hero */
 }
 
 .skills-list {
@@ -476,6 +491,7 @@ footer {
     font-size: 12px;
     color: var(--color-text);
 }
+
 /* Pixel Art Logo */
 .pixel-logo {
     display: flex;
@@ -484,7 +500,8 @@ footer {
     padding: 5px;
 }
 
-.pixel-g, .pixel-l {
+.pixel-g,
+.pixel-l {
     width: 4px;
     height: 4px;
     background: transparent;
@@ -505,7 +522,7 @@ footer {
       X . . X .
       . X X X .
     */
-    box-shadow: 
+    box-shadow:
         4px 0 var(--color-secondary), 8px 0 var(--color-secondary), 12px 0 var(--color-secondary),
         0 4px var(--color-secondary),
         0 8px var(--color-secondary), 8px 8px var(--color-secondary), 12px 8px var(--color-secondary),
@@ -513,8 +530,10 @@ footer {
         4px 16px var(--color-secondary), 8px 16px var(--color-secondary), 12px 16px var(--color-secondary);
     width: 4px;
     height: 4px;
-    margin-right: 16px; /* Space for the width of the letter */
-    margin-bottom: 16px; /* Space for height */
+    margin-right: 16px;
+    /* Space for the width of the letter */
+    margin-bottom: 16px;
+    /* Space for height */
 }
 
 .pixel-l {
@@ -525,7 +544,7 @@ footer {
       X . . . .
       X X X X .
     */
-    box-shadow: 
+    box-shadow:
         0 0 var(--color-secondary),
         0 4px var(--color-secondary),
         0 8px var(--color-secondary),
@@ -632,4 +651,168 @@ footer {
     min-width: 24px;
     display: inline-block;
     text-align: center;
+}
+
+/* Focused Skills Grid (3x2) */
+.skills-grid-focus {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+    .skills-grid-focus {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.skill-focus-card {
+    background-color: var(--color-card-bg);
+    border-radius: 12px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 15px var(--color-shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    border: 1px solid transparent;
+}
+
+.skill-focus-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px var(--color-shadow);
+    border-color: var(--color-secondary);
+}
+
+.skill-focus-icon {
+    margin-bottom: 20px;
+    color: var(--color-secondary);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-focus-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-text-bright);
+    margin: 0;
+}
+
+/* Professional Summary List */
+.summary-list {
+    list-style-type: none;
+    /* Remove default bullets */
+    padding-left: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    display: grid;
+    gap: 20px;
+}
+
+.summary-list li {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-divider);
+    border-radius: 8px;
+    padding: 20px;
+    transition: var(--transition);
+    box-shadow: 0 2px 5px var(--color-shadow);
+    position: relative;
+    padding-left: 25px;
+    /* Space for custom indicator if needed, or just padding */
+}
+
+.summary-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px var(--color-shadow);
+    border-color: var(--color-secondary);
+}
+
+/* Updated Hero Background */
+#hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../files/self.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    /* Light text for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+    text-align: center;
+    /* Center text */
+    padding-top: 80px;
+    /* Push content down as requested */
+}
+
+/* Ensure hero text is readable on dark overlay */
+.hero-title,
+.hero-tagline,
+.hero-desc {
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-desc {
+    font-size: 1.2rem;
+    max-width: 700px;
+}
+
+.highlight {
+    color: var(--color-secondary);
+    /* Keep highlight color */
+}
+
+/* Text-only Skills Grid */
+.skills-grid-text {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* Mobile default */
+    gap: 25px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    /* Extra padding below skills */
+}
+
+@media (min-width: 768px) {
+    .skills-grid-text {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columns for 3x2 layout */
+    }
+}
+
+.skill-text-card {
+    background-color: var(--color-card-bg);
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px var(--color-shadow);
+    transition: var(--transition);
+    border: 1px solid var(--color-divider);
+}
+
+.skill-text-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--color-shadow);
+    border-color: var(--color-secondary);
+}
+
+.skill-text-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--color-text-bright);
+    margin: 0;
 }
