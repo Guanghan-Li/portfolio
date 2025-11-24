@@ -109,7 +109,10 @@ Simply upload all files to any static hosting service (Netlify, GitHub Pages, et
 ## 📧 Contact
 
 - Email: Guanghanli90@gmail.com
+<<<<<<< HEAD
 - LinkedIn: https://www.linkedin.com/in/guanghanli/
+=======
+>>>>>>> 7dc7bf7ce8d2225077b32860d6d232309ba6d66e
 
 ---
 
